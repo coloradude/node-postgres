@@ -8,5 +8,5 @@ Open up Postico
 
 ###Step 2: 
 Create a new express app
-***npm install --save pg***
+```npm install --save pg```
 
