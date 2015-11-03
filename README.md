@@ -42,7 +42,9 @@ var connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/[Y
 
 ```javascript
 pg.connect();
-var query = client.query('CREATE TABLE items(id SERIAL PRIMARY KEY, text VARCHAR(40) not null, complete BOOLEAN)');
+client.query('CREATE TABLE weresquirrels(id SERIAL PRIMARY KEY');
+client.query('CREATE TABLE unibears(id SERIAL PRIMARY KEY, name VARCHAR(40), colony_id INTEGER');
+client.query('CREATE TABLE colonies(id SERIAL PRIMARY KEY, name VARCHAR(40))');
 query.on('end', function() {
   done();
 });
@@ -55,4 +57,8 @@ Here we interact with the database and then establish communication with it via 
 
 ###More resources
 
-http://stackoverflow.com/questions/8484404/what-is-the-proper-way-to-use-the-node-js-postgresql-module
+[Stack overflow discussion on using the node-postgres moduke](http://stackoverflow.com/questions/8484404/what-is-the-proper-way-to-use-the-node-js-postgresql-module)
+
+[Codecademy Intro to SQL](https://www.codecademy.com/learn/learn-sql)
+
+[Kahn Academy Intro to SQL](https://www.khanacademy.org/computing/computer-programming/sql)
