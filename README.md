@@ -1,8 +1,11 @@
 # node-postgres
-Most of this was taken from http://mherman.org/blog/2015/02/12/postgresql-and-nodejs/
+Most of this was taken/modified from http://mherman.org/blog/2015/02/12/postgresql-and-nodejs/
 
 Follow along with him if this sucks 
 
+![](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)
+
+![](http://farm6.static.flickr.com/5130/5310748684_f0fe7311dd.jpg)
 ###Step 1: Set up the database
 Go to http://postgresapp.com/ download and start the server
 
@@ -47,7 +50,7 @@ query.on('end', function() {
 
 Save this as database.js in a new folder called "models".
 
-Here we create a new instance of Client to interact with the database and then establish communication with it via the connect() method. We then set run a SQL query via the query() method. Communication is closed via the end() method. Be sure to check out the documentation for more info
+Here we create a new instance of Client to interact with the database and then establish communication with it via the connect() method. We then set run a SQL query via the query() method. Communication is closed via the done() method. Be sure to check out the documentation for more info
 
 
 More resources
