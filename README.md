@@ -34,13 +34,19 @@ Install node-postgres
 
 ###Step 3: Build Tables (collections)
 
-```
-var client = new pg.Client(connectionString);
-client.connect();
+```javascript
+pg.connect();
 var query = client.query('CREATE TABLE items(id SERIAL PRIMARY KEY, text VARCHAR(40) not null, complete BOOLEAN)');
-query.on('end', function() { client.end(); });
+query.on('end', function() {
+  done();
+});
 ```
 
 Save this as database.js in a new folder called "models".
 
 Here we create a new instance of Client to interact with the database and then establish communication with it via the connect() method. We then set run a SQL query via the query() method. Communication is closed via the end() method. Be sure to check out the documentation for more info
+
+
+More resources
+
+http://blog.tomnod.com/nodejs-database-queries/
