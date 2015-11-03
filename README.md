@@ -28,9 +28,12 @@ Create a new express app
 Install node-postgres
 ```npm install --save pg```
 
-```var pg = require('pg');```
+Put this in your index.js file
 
-```var connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/[YOUR-DATABASE-NAME]';```
+```javascript
+var pg = require('pg');
+var connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/[YOUR-DATABASE-NAME]';
+```
 
 ###Step 3: Build Tables (collections)
 
