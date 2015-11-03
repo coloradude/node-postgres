@@ -13,6 +13,10 @@ Click on 'SQL Query'
 
 Enter ```CREATE DATABASE [database name]```
 
+Click Execute Statement
+
+Verify by clicking your username next to the elephant in the status bar at the top
+
 ###Step 2: 
 Create a new express app
 
@@ -21,4 +25,6 @@ Create a new express app
 Install node-postgres
 ```npm install --save pg```
 
+```var pg = require('pg');```
+```var connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/[YOUR-DATABASE-NAME]';```
 
