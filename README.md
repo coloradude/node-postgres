@@ -26,5 +26,6 @@ Install node-postgres
 ```npm install --save pg```
 
 ```var pg = require('pg');```
+
 ```var connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/[YOUR-DATABASE-NAME]';```
 
