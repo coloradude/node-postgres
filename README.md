@@ -3,10 +3,14 @@
 ###Step 1:
 Go to http://postgresapp.com/ download and start the server
 
-Download this https://eggerapps.at/postico/. 
+Download this https://eggerapps.at/postico/.
+
 Postico is essentially Robomongo for Postgres
+
 Open up Postico enter a nickname and password (dont forget the password)
+
 Click on 'SQL Query'
+
 Enter ```CREATE DATABASE [database name]```
 
 ###Step 2: 
