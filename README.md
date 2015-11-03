@@ -53,6 +53,6 @@ Save this as database.js in a new folder called "models".
 Here we interact with the database and then establish communication with it via the connect() method. We then set run a SQL query via the query() method. Communication is closed via the done() method. Be sure to check out the documentation for more info
 
 
-More resources
+###More resources
 
 http://blog.tomnod.com/nodejs-database-queries/
