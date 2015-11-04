@@ -42,7 +42,7 @@ var connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/[Y
 
 ```javascript
 pg.connect();
-client.query('CREATE TABLE weresquirrels(id SERIAL PRIMARY KEY');
+client.query('CREATE TABLE weresquirrels(id SERIAL PRIMARY KEY, colony_id INTEGER');
 client.query('CREATE TABLE unibears(id SERIAL PRIMARY KEY, name VARCHAR(40), colony_id INTEGER');
 client.query('CREATE TABLE colonies(id SERIAL PRIMARY KEY, name VARCHAR(40))');
 query.on('end', function() {
