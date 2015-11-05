@@ -57,7 +57,7 @@ Here we interact with the database and then establish communication with it via 
 
 ###More resources
 
-[Stack overflow discussion on using the node-postgres moduke](http://stackoverflow.com/questions/8484404/what-is-the-proper-way-to-use-the-node-js-postgresql-module)
+[Stack overflow discussion on using the node-postgres module](http://stackoverflow.com/questions/8484404/what-is-the-proper-way-to-use-the-node-js-postgresql-module)
 
 [Codecademy Intro to SQL](https://www.codecademy.com/learn/learn-sql)
 
